@@ -1,0 +1,460 @@
+h1{
+    font-size: 2.5rem;
+    color: #e6e6e6;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 20px;
+    color: #e6e6e6;
+    font-family: "Montserrat", serif;
+}
+
+div {
+    padding: 30px; 
+}
+#Discovery {
+    border: 20px outset skyblue ; 
+    padding: 100px;
+}
+#images {
+     border: 10px outset #a7a7a7 ; 
+    padding: 10px; 
+}
+body {
+    background-color: #02021a;
+    font-family:"Montserrat", serif;
+}
+h2{
+    font-size: 1.4rem;
+    color: rgba(232, 238, 235, 0.983);
+    margin-bottom: 1;
+    margin-inline-end: 28px;
+}
+.chapter-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin: 80px auto;
+    max-width: 800px;
+    box-shadow: 0.4px 15px rgba(0, 0, 0, 0.1);
+}
+.chapter-section h2 {font-family:"Montserrat", serif;font-size: 24px;color: #e6e6e6;margin-bottom: 5px;border-bottom: 2px solid #e6e6e6;padding-bottom: 5px;display: inline-block;}
+.chapter-section p {
+    font-family:"Montserrat", serif ;
+    font-size: 18px;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+/* Navigation style */
+nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 10px 0px;
+   z-index: 1000 ;
+   background-color: rgba(17, 17, 47, 0.95);
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.52);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    font-family:"Montserrat", serif;
+    font-size: 16px;
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+    position: relative;
+}
+nav a:hover {
+    color: #310a84;
+    border-bottom: 2px solid #e6e6e6 ;
+}
+div {
+    margin-top: 50px;
+}
+a {
+    font-size: 20px;
+     color: aqua; 
+}
+/* Header Section style */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 99vh;
+    width: auto;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 60;
+    background-image: url(image/yatch7.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.container::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 0; 
+}
+.header-content,
+.button-container {
+    position: relative;
+    z-index: 1;
+}
+/* header section style-Button */
+
+button {
+    text-transform: uppercase;
+    position: relative;
+    border: none;
+    font-size: 18px;
+    transform: 0.2s;
+    background-color: 0.2s;
+    outline: none;
+    border-radius: 3px;
+    margin: -50.0px;
+    padding: 23px 33px;
+    border: 3px solid #e6e6e6;
+}
+button::active {
+    transform: translate(3px);
+}
+button::after,
+button::after {
+    border-radius: 3px;
+}
+
+.shrink-border {
+    background-color: transparent;
+    color: #e6e6e6;
+}
+.shrink-border::hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: #e6e6e6;
+}
+.shrink-border:hover:before {
+    opacity: 0;
+}
+.shrink-border::before {
+   transition: opacity 0.3s, border 0.3s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.shrink-border::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 3px solid #e6e6e6;
+    opacity: 0;
+    z-index: -1;
+    transform: scaleX(1.1) scaleY(1.3);
+    transition: transform 0.3s, opacity 0.3s;
+}
+.shrink-border:hover::after {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+/* footer section style */
+
+footer {
+    background-color:rgba(17, 17, 47, 0.95);
+    padding: 40px 0;
+    color: #e6e6e6;
+}
+.footer-content {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.footer-links a {
+    color: #e6e6e6;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+.footer-links a:hover {
+    color: #310a84;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+.footer-social {
+    margin-top: 0;
+}
+.footer-social a {
+    color: #e6e6e6;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-social a:hover {
+    color: #310a84;
+}
+#main-gallery-container {
+    margin-top: 48px;
+    margin-inline-start: 45px;
+}
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75vw;
+    margin: 20px auto;
+}
+figure {
+    margin: 0px;
+    padding: 0px; 
+    position: relative;
+}
+figure img {
+    width: 100%;
+}
+#gallery img {
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px #ccc;
+    z-index: -1;
+    border: 3px;
+    position: relative;
+    width: 98%;
+    box-sizing: border-box;
+}
+
+figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    color: #525154;
+    z-index: 1;
+    padding: 9px 0px 11px 0px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 6px;
+}
+
+@media screen and (max-width:600px) {
+    figcaption {
+        font-size: 3vw;
+    }
+    #gallery {
+        grid-template-columns: 1fr;
+        width: 90vw;
+    }
+}
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  #but1 {
+    background-color: #060f43;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+
+  }
+
+  #contact-us-today {
+    font-size: 1.4rem;
+    color: rgba(232, 238, 235, 0.983);
+    margin-bottom: 1;
+    position: center;
+  }
+
+
+  /* custom table style */
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+
+
+  .custom-table th,
+  .custom-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .light-text {
+    color: #ccc;
+  }
+  .table-heading-text {
+    color: aqua;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column2 {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #0c1834;
+    color: rgb(255, 255, 255);
+  }
+  
+  .container2 {
+    padding: 0 16px;
+  }
+  
+  .container2::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button2 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+/*Button Alignment for Tours page */
+
+  .tour-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tour-button {
+    align-self: flex-end;
+  }
+
+  /*Tour section style */
+
+  .tour-button-container {
+    text-align: right; /* Align the button to the right */
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+
+  .tour-button {
+    text-transform: uppercase;
+    font-family:"Montserrat", serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1b1b20;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .tour-button:hover {
+    background-color: rgba(84, 29, 156, 0.05);
+  }

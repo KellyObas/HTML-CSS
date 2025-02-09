@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Elegant Yatching Tours-Contact us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<style>
+/* Navigation style */
+nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 10px 0px;
+   z-index: 1000 ;
+   background-color: rgba(17, 17, 47, 0.95);
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.52);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    font-family:"Montserrat", serif;
+    font-size: 16px;
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+    position: relative;
+}
+nav a:hover {
+    color: #310a84;
+    border-bottom: 2px solid #e6e6e6 ;
+}
+div {
+    margin-top: 50px;
+}
+a {
+    font-size: 20px;
+     color: aqua; 
+}
+
+
+label {
+    font-size: 1rem;
+    color: rgba(232, 238, 235, 0.983);
+    margin-bottom: 1;
+    margin-inline-end: 28px;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: #e6e6e6;
+    margin-bottom: 10px;}
+
+ h2{
+    font-size: 1.4rem;
+    color: rgba(10, 10, 11, 98%);
+    margin-bottom: 1;
+    margin-inline-end: 28px;}
+
+body {
+    background-color: #02021a;
+    font-family:"Montserrat", serif;
+}
+    .contact-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-groupA {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+input:valid,
+textarea:valid,
+select:valid {
+    border-color: #28a745;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+.footer {
+    background-color:rgba(17, 17, 47, 0.95);
+    padding: 40px 0;
+    color: #e6e6e6;
+}
+.footer-contentA {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.footer-links a {
+    color: #e6e6e6;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+.footer-links a:hover {
+    color: #310a84;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+.footer-social {
+    margin-top: 0;
+}
+.footer-social a {
+    color: #e6e6e6;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-social a:hover {
+    color: #310a84;
+}
+</style>
+
+<body>
+
+
+     <!--This is a navigation section-->
+     <nav> 
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Tour.html">Tour</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+    </ul></nav>
+
+
+     <!--header section-->
+    <main class="contact-container">
+        <section class="contact-info">
+            <h2>Our contact Information</h2>
+            <address>
+                <p>Email: kb.o.fred@gmail.com</p>
+                <p>Phone: 070 61 41 9013</p>
+                <p> Address: 123 Business Street, city, Country</p>
+            </address>
+        </section>
+    </main>
+
+ <!--Form section-->
+ 
+ <div>
+    <h2>
+        <p>Please fill out the form below</p>
+    </h2>
+</div>
+
+<div>
+    <form id="contact-form" action="form-handler.php" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required minlength="2">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+</div>
+</div>
+<div class="form-groupA">
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+</div>
+<div class="form-group">
+<label for="subject">Subject:</label>
+<select id="subject" name="subject" required>
+    <option value="">Please select your services</option>
+    <option value="general">General Inquiry</option>
+    <option value="support">Technical Support</option>
+    <option value="billing">feedback</option>
+</select>
+</div>
+<div class="form-group">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+</div>
+<div class="form-group">
+    <label for="newsletter">
+        <input type="checkbox" id="newsletter" name="newsletter">
+        Subscribe to our newsletter
+    </label>
+</div>
+<button type="submit">Send Message</button>
+</form>
+
+   <!--This is a footer section-->
+<footer>
+    <div class="footer-contentA">
+     <p>&copy; 2025 BIGY Travels. All rights reserved.</p>
+         <ul class="footer-links">
+             <li><a href="home.html">Home</a></li>
+             <li><a href="Tour.html">Tour</a></li>
+             <li><a href="gallery.html">Gallery</a></li>
+             <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+ 
+          <p class="footer-social">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          </p>
+    </div>
+ </footer>
+</body>
+</html>
