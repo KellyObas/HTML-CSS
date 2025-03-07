@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Example</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas" width="400" height="200"></canvas>
+    <script>
+        const canvas = document.getElementById('mycanvas'); // Get the HTML canvas element
+        const context = canvas.getContext('2d'); // Get the 2d rendering context object
+        context.fillStyle = 'green'; // set the style property of the drawung context
+        context.fillRect(20, 10, 250, 100); // draw and fill a rectangle
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Example</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas" width="400" height="200"></canvas>
+    <script>
+        const canvas = document.getElementById('mycanvas'); 
+        const ctx = canvas.getContext('2d');
+        let isdrawing = false;
+
+        canvas.addEventListener('mousedown', function(event) {
+            isdrawing = true;
+            draw(
+                event.clientX - canvas.offsetLeft,
+                event.clientY - canvas.offsetTop
+            );
+        });
+
+        canvas.addEventListener('mousemove', function(event) {
+            if (isdrawing) {
+                draw(
+                    event.clientX - canvas.offsetLeft,
+                    event.clientY - canvas.offsetTop
+                );
+            }
+        });
+
+        canvas.addEventListener('mouseup', function() {
+            isdrawing = false;
+        });
+
+        function draw(x, y) {
+            ctx.fillStyle = 'green';
+            ctx.fillRect(x, y, 5, 5);
+        }
+    </script>
+</body>
+</html>
